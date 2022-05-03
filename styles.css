@@ -5,14 +5,14 @@ body {
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 60px;
     text-align: center;
     animation: title-animation 2s forwards 0.01s;
 }
 
 h2 {
     color: #123;
-    font-size: 100px;
+    font-size: 40px;
     text-align: center;
     animation: subtitle-animation 2s forwards 2s;
 }
@@ -23,7 +23,7 @@ h2 span {
 }
 
 p {
-    font-size: 30px;
+    font-size: 16px;
 
 }
 
@@ -83,5 +83,34 @@ p {
         opacity: 1;
         transform: translate(0px, 0px) rotate(0deg);
         color: yellowgreen;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 160px;
+    }
+
+    h2 {
+        font-size: 100px;
+    }
+
+    p {
+        font-size: 40px;
     }
 }
