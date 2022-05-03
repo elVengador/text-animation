@@ -1,0 +1,87 @@
+body {
+    height: 100vh;
+    background-color: #123;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 200px;
+    text-align: center;
+    animation: title-animation 2s forwards 0.01s;
+}
+
+h2 {
+    color: #123;
+    font-size: 100px;
+    text-align: center;
+    animation: subtitle-animation 2s forwards 2s;
+}
+
+h2 span {
+    opacity: 0;
+    animation: emoji-animation 2s forwards 2s;
+}
+
+p {
+    font-size: 30px;
+
+}
+
+.chart {
+    color: #123;
+    display: inline-block;
+    animation: chart-animation 1s cubic-bezier(0.55, 1.91, 0.57, 0.71) 0.01s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title-animation {
+    from {
+        transform: translate(400px);
+        color: #123;
+    }
+
+    to {
+        transform: translate(0px);
+        color: royalblue;
+    }
+}
+
+@keyframes subtitle-animation {
+    from {
+        transform: translate(200px);
+        color: #123;
+    }
+
+    to {
+        transform: translate(0px);
+        color: yellowgreen;
+    }
+}
+
+@keyframes emoji-animation {
+    from {
+        opacity: 0;
+        transform: translate(200px);
+        color: #123;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+        color: yellowgreen;
+    }
+}
+
+@keyframes chart-animation {
+    from {
+        opacity: 0;
+        transform: translate(0px, -40px) rotate(60deg);
+        color: #123;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px) rotate(0deg);
+        color: yellowgreen;
+    }
+}
